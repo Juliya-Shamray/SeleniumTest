@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
@@ -50,10 +49,10 @@ public class FirstTest {
         driver.get("https://next.privat24.ua/mobile");
         driver.findElement(phoneNumber).sendKeys("957647952");
 
-        WebElement toClear = driver.findElement(amount);
-        toClear.sendKeys(Keys.CONTROL + "a");
-        toClear.sendKeys(Keys.DELETE);
-        toClear.sendKeys("1");
+
+        driver.findElement(amount).sendKeys(Keys.CONTROL + "a");
+        driver.findElement(amount).sendKeys("1");
+
 
         driver.findElement(cardFrom).sendKeys("4004159115449003");
         driver.findElement(expDate).sendKeys("1225");
@@ -79,10 +78,8 @@ public class FirstTest {
         driver.get("https://next.privat24.ua/mobile");
         driver.findElement(phoneNumber).sendKeys("963517269");
 
-        WebElement toClear = driver.findElement(amount);
-        toClear.sendKeys(Keys.CONTROL + "a");
-        toClear.sendKeys(Keys.DELETE);
-        toClear.sendKeys("8000");
+        driver.findElement(amount).sendKeys(Keys.CONTROL + "a");
+        driver.findElement(amount).sendKeys("8000");
 
         driver.findElement(cardFrom).sendKeys("5309233034765085");
         driver.findElement(expDate).sendKeys("1225");
@@ -181,10 +178,9 @@ public class FirstTest {
         driver.get("https://next.privat24.ua/mobile");
         driver.findElement(phoneNumber).sendKeys("963517269");
 
-        WebElement toClear = driver.findElement(amount);
-        toClear.sendKeys(Keys.CONTROL + "a");
-        toClear.sendKeys(Keys.DELETE);
-        toClear.sendKeys("0.1");
+
+        driver.findElement(amount).sendKeys(Keys.CONTROL + "a");
+        driver.findElement(amount).sendKeys("0.1");
 
         driver.findElement(cardFrom).sendKeys("5309233034765085");
         driver.findElement(expDate).sendKeys("1225");
@@ -203,10 +199,8 @@ public class FirstTest {
         driver.get("https://next.privat24.ua/mobile");
         driver.findElement(phoneNumber).sendKeys("963517269");
 
-        WebElement toClear = driver.findElement(amount);
-        toClear.sendKeys(Keys.CONTROL + "a");
-        toClear.sendKeys(Keys.DELETE);
-        toClear.sendKeys("8000.1");
+        driver.findElement(amount).sendKeys(Keys.CONTROL + "a");
+        driver.findElement(amount).sendKeys("8000.1");
 
         driver.findElement(cardFrom).sendKeys("5309233034765085");
         driver.findElement(expDate).sendKeys("1225");
@@ -226,10 +220,8 @@ public class FirstTest {
         driver.get("https://next.privat24.ua/mobile");
         driver.findElement(phoneNumber).sendKeys("95764795");
 
-        WebElement toClear = driver.findElement(amount);
-        toClear.sendKeys(Keys.CONTROL + "a");
-        toClear.sendKeys(Keys.DELETE);
-        toClear.sendKeys("999");
+        driver.findElement(amount).sendKeys(Keys.CONTROL + "a");
+        driver.findElement(amount).sendKeys("999");
 
         driver.findElement(cardFrom).sendKeys("5309233034765085");
         driver.findElement(expDate).sendKeys("1225");
